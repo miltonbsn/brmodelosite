@@ -1,0 +1,78 @@
+/***********************************************************/
+/* components */
+/***********************************************************/
+
+body {
+    background-color: #f7f7f9;
+    margin: 0;
+}
+
+.presentation{
+    margin-top: 60px;
+    height: 300px;
+    background-color: #c6daff;
+    right: 0;
+    left: 0;
+    display: block;
+}
+
+/***********************************************************/
+/* header */
+/***********************************************************/
+.header{
+    color: #FFFFFF;
+    display: block;
+    font-size: 14px;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100000;
+    height: 60px;
+}
+
+.header h1 {
+    float: left;
+}
+
+.header h1 a {
+    padding: 0 15px;
+    border-right: 1px solid rgba(255,255,255, 0.3);
+    color: #6494f9;
+}
+
+.header nav {
+    float: right;
+    margin-top: 23px;
+    margin-right: 15px;
+}
+
+.header > nav a {
+    padding: 0 10px;
+    border-right: 1px solid #6494f9;
+    color: #646565;
+}
+
+/***********************************************************/
+/* components */
+/***********************************************************/
+
+.button {
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    background: #6494f9;
+    color: #e2e5e5 !important;
+    border: 0px none;
+    cursor: pointer;
+    padding: 10px !important;
+}
+
+.button:hover {
+    background: #74A599;
+}
+
+.button:active {
+    background: #F6A953;
+}

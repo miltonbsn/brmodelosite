@@ -9,12 +9,49 @@ body {
 
 .presentation{
     margin-top: 60px;
-    height: 300px;
+    height: 400px;
     background-color: #c6daff;
     right: 0;
     left: 0;
     display: block;
 }
+
+.info-container{
+    width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.info-container h2{
+    color: #6494f9;
+}
+
+.info-container p{
+    width: 500px;
+    color: #646565;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.icon-container{
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+
+.small-container{
+    width: 200px;
+    height: 200px;
+    background-color: #e2e5e5;
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+}
+
+
 
 /***********************************************************/
 /* header */
@@ -24,12 +61,17 @@ body {
     display: block;
     font-size: 14px;
     left: 0;
-    position: fixed;
+/*    position: fixed;*/
     right: 0;
     top: 0;
     width: 100%;
     z-index: 100000;
-    height: 60px;
+    height: 2px;
+}
+
+.header img {
+    float: left;
+    padding: 10px;
 }
 
 .header h1 {
@@ -37,7 +79,6 @@ body {
 }
 
 .header h1 a {
-    padding: 0 15px;
     border-right: 1px solid rgba(255,255,255, 0.3);
     color: #6494f9;
 }
@@ -52,6 +93,11 @@ body {
     padding: 0 10px;
     border-right: 1px solid #6494f9;
     color: #646565;
+    cursor: pointer;
+}
+
+.header > nav a:hover {
+    border-bottom: 1px solid #646565;
 }
 
 /***********************************************************/
@@ -76,3 +122,13 @@ body {
 .button:active {
     background: #F6A953;
 }
+
+/***********************************************************/
+/* footer */
+/***********************************************************/
+.footer {
+    margin-top: 25px;
+    height: 60px;
+    border-top: 1px solid black;
+}
+

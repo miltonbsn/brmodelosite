@@ -22,6 +22,10 @@ body {
     margin: 0;
 }
 
+.content{
+  min-height: 600px;
+}
+
 .presentation{
     margin-top: 60px;
     height: 400px;
@@ -88,7 +92,46 @@ body {
     margin: 25px;
 }
 
+/***********************************************************/
+/* PROCESS PAGE */
+/***********************************************************/
 
+.process-content{
+  width: 800px;
+  margin: auto;
+  min-height: 700px;
+}
+
+.process-li{
+  display: inline-block;
+  width: 800px;
+  height: 205px;
+  margin-top: 25px;
+}
+
+.process-li.break{
+  border-bottom: 1px solid blue;
+}
+
+.process-img{
+  float:left;
+  padding: 25px;
+  background-color: #e2e5e5;
+}
+
+.process-description{
+  float:left;
+  width: 480px;
+  padding: 20px;
+}
+
+.process-description h1{
+  color: blue;
+}
+
+.process-description p{
+  margin-top: 10px;
+}
 
 /***********************************************************/
 /* header */
@@ -138,6 +181,11 @@ body {
 
 .header > nav a:hover {
     text-decoration: underline;
+}
+
+.header.subpage {
+  height: 60px;
+  border-bottom: 1px solid #e2e5e5;
 }
 
 .navigation{

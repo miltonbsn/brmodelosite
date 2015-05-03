@@ -1,6 +1,5 @@
 h1, h2, h3{
   font-family: 'Oswald', sans-serif;
-  font-weight: 400;
 }
 
 body {
@@ -115,12 +114,12 @@ body {
 }
 
 .small-container{
-    width: 180px;
+    width: 195px;
     height: 160px;
     background-color: #e2e5e5;
     display: inline-block;
-    padding: 5px;
-    margin: 20px;
+    padding: 15px;
+    margin: 10px;
     float: left;
 
 }
@@ -280,7 +279,6 @@ body {
 }
 
 .navigation{
-    color: blue !important;
     text-decoration: underline !important;
     font-weight: bold;
 }
@@ -289,7 +287,7 @@ body {
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
-    background: #6494f9;
+    background: #254ac4;
     color: #e2e5e5 !important;
     border: 0px none;
     cursor: pointer;

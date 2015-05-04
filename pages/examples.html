@@ -1,149 +1,140 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>brModelo</title>
 
-    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>brModelo</title>
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link rel='shortcut icon' type='image/x-icon' href='../favicon.ico'/>
+        <link rel="stylesheet" type="text/css" href="../css/reset.css">
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+    </head>
 
-    <link rel='shortcut icon' type='image/x-icon' href='../favicon.ico'/>
-
-    <link rel="stylesheet" type="text/css" href="../css/reset.css">
-    <link rel="stylesheet" type="text/css" href="../css/main.css">
-</head>
-<body>
-    <!--header-->
-    <div class="header subpage">
-
-        <img src="../images/logo.png">
-        <h1><a>brModelo</a></h1>
-
-        <nav>
-            <a href="../index.html">HOME</a>
-            <a href="process.html">PROCESS</a>
-            <a href="learn.html">LEARN</a>
-            <a href="examples.html" class="navigation">EXAMPLES</a>
-            <a href="news.html">NEWS</a>
-            <a href="about.html" class="last">ABOUT</a>
-            <a class="button">TRY NOW</a>
-        </nav>
-
-    </div>
-
-    <div class="content">
-
-        <h2 class="page-title">Petshop example</h2>
-
-        <div class="example-li">
-          <h2>Data problem</h2>
-          <div>
-            <p>
-              0NF (PETid, PETname, PETtype, PETOwner {VisitDate, PROCId, PROCName})
-            </p>
-          </div>
+    <body>
+        <!--header-->
+        <div class="header subpage">
+            <img src="../images/logo.png">
+            <h1><a>brModelo</a></h1>
+            <nav>
+                <a href="../index.html">HOME</a>
+                <a href="process.html">PROCESS</a>
+                <a href="learn.html">LEARN</a>
+                <a href="examples.html" class="navigation">EXAMPLES</a>
+                <a href="news.html">NEWS</a>
+                <a href="about.html" class="last">ABOUT</a>
+                <a class="button">TRY NOW</a>
+            </nav>
         </div>
 
-        <div class="example-li">
-          <h2>Step one -­ Modeling</h2>
-          <div class="example-img">
-            <img src="../images/ex_pet.png">
-          </div>
-        </div>
+        <div class="content">
+            <h2 class="page-title">Petshop example</h2>
 
-        <div class="example-li">
-          <h2>Step two -­ Normalization</h2>
-          <div>
-            <h3>NF1</h3>
-            <ul>
-              <li>
-                <strong>PET </strong>(PETid, PETname, PETtype, PETOwner)
-              </li>
-              <li>
-                <strong>PROC </strong>(Procid, VisitDate, PROCId, PROCName)
-              </li>
-            </ul>
+            <div class="example-li">
+              <h2>Data problem</h2>
+              <div>
+                <p>
+                  0NF (PETid, PETname, PETtype, PETOwner {VisitDate, PROCId, PROCName})
+                </p>
+              </div>
+            </div>
 
-            <h3>NF1</h3>
-            <ul>
-              <li>
-                <strong>PET </strong>(PETid, PETname, PETtype, PETOwner)
-              </li>
-              <li>
-                <strong>PROC </strong>(Procid, VisitDate, PROCId, PROCName)
-              </li>
-              <li>
-                <strong>OWNER </strong>(OWNERid, OWNERname, OWNERnumber, OWNERaddress)
-              </li>
-            </ul>
+            <div class="example-li">
+              <h2>Step one -­ Modeling</h2>
+              <div class="example-img">
+                <img src="../images/ex_pet.png">
+              </div>
+            </div>
 
-            <h3>NF3</h3>
-            <ul>
-              <li>
-                <strong>PET </strong>(PETid, PETname, PETtype, PETOwner)
-              </li>
-              <li>
-                <strong>PROC </strong>(Procid, VisitDate, PROCId, PROCName)
-              </li>
-              <li>
-                <strong>OWNER </strong>(OWNERid, OWNERname, OWNERnumber, OWNERaddress)
-              </li>
-              <li>
-                <strong>CONSULT </strong>(VISITid, PROCEDUREid, PETid)
-              </li>
-            </ul>
+            <div class="example-li">
+              <h2>Step two -­ Normalization</h2>
+              <div>
+                <h3>NF1</h3>
+                <ul>
+                  <li>
+                    <strong>PET </strong>(PETid, PETname, PETtype, PETOwner)
+                  </li>
+                  <li>
+                    <strong>PROC </strong>(Procid, VisitDate, PROCId, PROCName)
+                  </li>
+                </ul>
 
-          </div>
-        </div>
+                <h3>NF1</h3>
+                <ul>
+                  <li>
+                    <strong>PET </strong>(PETid, PETname, PETtype, PETOwner)
+                  </li>
+                  <li>
+                    <strong>PROC </strong>(Procid, VisitDate, PROCId, PROCName)
+                  </li>
+                  <li>
+                    <strong>OWNER </strong>(OWNERid, OWNERname, OWNERnumber, OWNERaddress)
+                  </li>
+                </ul>
 
-        <div class="example-li">
-          <h2>Step three -­ Creating the database</h2>
-          <div>
-            <p> CREATE DATABASE petShop; <br><br>
+                <h3>NF3</h3>
+                <ul>
+                  <li>
+                    <strong>PET </strong>(PETid, PETname, PETtype, PETOwner)
+                  </li>
+                  <li>
+                    <strong>PROC </strong>(Procid, VisitDate, PROCId, PROCName)
+                  </li>
+                  <li>
+                    <strong>OWNER </strong>(OWNERid, OWNERname, OWNERnumber, OWNERaddress)
+                  </li>
+                  <li>
+                    <strong>CONSULT </strong>(VISITid, PROCEDUREid, PETid)
+                  </li>
+                </ul>
+              </div>
+            </div>
 
-              CREATE TABLE PET(<br>
-                 PETid datatype,
-                 PETname datatype,
-                 PETowner datatype,
-                 PETtype datatype,
-                 PRIMARY KEY(PETid)<br>
-                );<br><br>
+            <div class="example-li">
+              <h2>Step three -­ Creating the database</h2>
+              <div>
+                <p> CREATE DATABASE petShop; <br><br>
 
-                CREATE TABLE OWNER(<br>
-                   OWNERid datatype,
-                   OWNERname datatype,
-                   OWNERnumber datatype,
-                   OWNERaddress datatype,
-                   PRIMARY KEY(OWNERid)<br>
-                  );<br><br>
-
-                  CREATE TABLE PROC(<br>
-                     PROCId datatype,
-                     PROCName datatype,
-                     PRIMARY KEY(PROCId)<br>
+                  CREATE TABLE PET(<br>
+                     PETid datatype,
+                     PETname datatype,
+                     PETowner datatype,
+                     PETtype datatype,
+                     PRIMARY KEY(PETid)<br>
                     );<br><br>
 
-                    CREATE TABLE CONSULT(<br>
-                    CONSULTid datatype,
-                    CONSULTDate datatype,
-                    PROCId datatype,
-                    PETid datatype,
-                       PRIMARY KEY(VISITid, PROCId, PETid)<br>
+                    CREATE TABLE OWNER(<br>
+                       OWNERid datatype,
+                       OWNERname datatype,
+                       OWNERnumber datatype,
+                       OWNERaddress datatype,
+                       PRIMARY KEY(OWNERid)<br>
                       );<br><br>
-            </p>
+
+                      CREATE TABLE PROC(<br>
+                         PROCId datatype,
+                         PROCName datatype,
+                         PRIMARY KEY(PROCId)<br>
+                        );<br><br>
+
+                        CREATE TABLE CONSULT(<br>
+                        CONSULTid datatype,
+                        CONSULTDate datatype,
+                        PROCId datatype,
+                        PETid datatype,
+                           PRIMARY KEY(VISITid, PROCId, PETid)<br>
+                          );<br><br>
+                </p>
+              </div>
+            </div> <!--end exampe-content-->
+          </div> <!--end content-->
+
+        <div class="footer">
+          <div class="footer-content">
+            <img src="../images/logo.png">
+            <h3 class="right">Version 1.0</h3>
           </div>
         </div>
 
-
-    </div>
-
-    <div class="footer">
-      <div class="footer-content">
-        <img src="../images/logo.png">
-        <h3 class="right">Version 1.0</h3>
-      </div>
-    </div>
-
-
-</body>
+    </body>
 </html>

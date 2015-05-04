@@ -1,267 +1,259 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>brModelo</title>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>brModelo</title>
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link rel='shortcut icon' type='image/x-icon' href='../favicon.ico'/>
+        <link rel="stylesheet" type="text/css" href="../css/reset.css">
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+    </head>
+    <body>
+        <!--header-->
+        <div class="header subpage">
 
-    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+            <img src="../images/logo.png">
+            <h1><a>brModelo</a></h1>
 
-    <link rel='shortcut icon' type='image/x-icon' href='../favicon.ico'/>
+            <nav>
+                <a href="../index.html">HOME</a>
+                <a href="process.html">PROCESS</a>
+                <a href="learn.html" class="navigation">LEARN</a>
+                <a href="examples.html">EXAMPLES</a>
+                <a href="news.html">NEWS</a>
+                <a href="about.html" class="last">ABOUT</a>
+                <a class="button">TRY NOW</a>
+            </nav>
 
-    <link rel="stylesheet" type="text/css" href="../css/reset.css">
-    <link rel="stylesheet" type="text/css" href="../css/main.css">
-</head>
-<body>
-    <!--header-->
-    <div class="header subpage">
-
-        <img src="../images/logo.png">
-        <h1><a>brModelo</a></h1>
-
-        <nav>
-            <a href="../index.html">HOME</a>
-            <a href="process.html">PROCESS</a>
-            <a href="learn.html" class="navigation">LEARN</a>
-            <a href="examples.html">EXAMPLES</a>
-            <a href="news.html">NEWS</a>
-            <a href="about.html" class="last">ABOUT</a>
-            <a class="button">TRY NOW</a>
-        </nav>
-
-    </div>
-
-    <div class="content">
-
-      <div class="learn-content">
-
-        <h2>Conceptual elements</h2>
-
-        <div class="learn-li">
-          <div class="learn-img">
-            <img src="../images/ret.png">
-          </div>
-          <div class="process-description">
-            <h3>Entity</h3>
-            <p> Entities are represented by rectangles. An entity is an object
-                or concept about which you want to store information.
-            </p>
-          </div>
         </div>
 
-        <div class="learn-li">
-          <div class="learn-img">
-            <img src="../images/attr.png">
-          </div>
-          <div class="process-description">
-            <h3>Attribute</h3>
-            <p> Attributes are represented by ovals. A key attribute is the
-               unique, distinguishing characteristic of the entity. For example,
-               an employee's social security number might be the employee's key
-               attribute.
-            </p>
-          </div>
-        </div>
+        <div class="content">
+
+          <div class="learn-content">
+
+            <h2>Conceptual elements</h2>
+
+            <div class="learn-li">
+              <div class="learn-img">
+                <img src="../images/ret.png">
+              </div>
+              <div class="process-description">
+                <h3>Entity</h3>
+                <p> Entities are represented by rectangles. An entity is an object
+                    or concept about which you want to store information.
+                </p>
+              </div>
+            </div>
+
+            <div class="learn-li">
+              <div class="learn-img">
+                <img src="../images/attr.png">
+              </div>
+              <div class="process-description">
+                <h3>Attribute</h3>
+                <p> Attributes are represented by ovals. A key attribute is the
+                   unique, distinguishing characteristic of the entity. For example,
+                   an employee's social security number might be the employee's key
+                   attribute.
+                </p>
+              </div>
+            </div>
 
 
-        <div class="learn-li break">
-          <div class="learn-img">
-            <img src="../images/rel.png">
-          </div>
-          <div class="process-description">
-            <h3>Relationship</h3>
-            <p> Relationships are represented by diamond shapes and show how two
-               entities share information in the database.
-            </p>
-          </div>
-        </div>
+            <div class="learn-li break">
+              <div class="learn-img">
+                <img src="../images/rel.png">
+              </div>
+              <div class="process-description">
+                <h3>Relationship</h3>
+                <p> Relationships are represented by diamond shapes and show how two
+                   entities share information in the database.
+                </p>
+              </div>
+            </div>
 
-        <h2>Logic elements</h2>
+            <h2>Logic elements</h2>
 
+            <div class="learn-li small">
+              <div>
+                <h3>Database normalization</h3>
+                <p>
+                 Databases must be normalized in order to be represented in the logical model.
+                 Database normalization is the process of organizing the attributes
+                 and tables of a relational database to minimize data redundancy.
+                 The databases should reach 3 normal forms; NF1, NF2 3 NF3.
+                <p>
+              </div>
+            </div>
 
-        <div class="learn-li small">
-          <div>
-            <h3>Database normalization</h3>
-            <p>
-             Databases must be normalized in order to be represented in the logical model.
-             Database normalization is the process of organizing the attributes
-             and tables of a relational database to minimize data redundancy.
-             The databases should reach 3 normal forms; NF1, NF2 3 NF3.
-            <p>
-          </div>
-        </div>
-
-        <div class="learn-li">
-          <div>
-            <h3>NF1</h3>
-            <ul>
-              <li>
-                <strong>Step 1</strong>: Eliminate the Repeating Groups
+            <div class="learn-li">
+              <div>
+                <h3>NF1</h3>
                 <ul>
                   <li>
-                    Eliminate nulls: each repeating group attribute contains
-                    an appropriate data value
+                    <strong>Step 1</strong>: Eliminate the Repeating Groups
+                    <ul>
+                      <li>
+                        Eliminate nulls: each repeating group attribute contains
+                        an appropriate data value
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                  <strong>Step 2</strong>: Identify the Primary Key
+                    <ul>
+                      <li>
+                        Must uniquely identify attribute value
+                      </li>
+                      <li>
+                        key must be composed
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                  <strong>Step 3</strong>: Identify All Dependencies
+                    <ul>
+                      <li>
+                        Dependencies are depicted with a diagram
+                      </li>
+                    </ul>
                   </li>
                 </ul>
-              </li>
-              <li>
-              <strong>Step 2</strong>: Identify the Primary Key
+              </div>
+            </div>
+
+            <div class="learn-li">
+              <div>
+                <h3>NF2</h3>
                 <ul>
                   <li>
-                    Must uniquely identify attribute value
+                    <strong>Step 1</strong>: Make New Tables to Eliminate Partial Dependencies
+                    <ul>
+                      <li>
+                        Write each key component on separate line, then write
+                        original (composite) key on last line
+                      </li>
+                      <li>
+                        Each component will become key in new table
+                      </li>
+                    </ul>
                   </li>
                   <li>
-                    key must be composed
+                  <strong>Step 2</strong>: Reassign Corresponding Dependent Attributes
+                    <ul>
+                      <li>
+                        Determine attributes that are dependent on other
+                        attributes
+                      </li>
+                      <li>
+                        At this point, most anomalies have been eliminated
+                      </li>
+                    </ul>
                   </li>
                 </ul>
-              </li>
-              <li>
-              <strong>Step 3</strong>: Identify All Dependencies
+              </div>
+            </div>
+
+            <div class="learn-li big break">
+              <div>
+                <h3>NF3</h3>
                 <ul>
+
                   <li>
-                    Dependencies are depicted with a diagram
+                    <strong>Step 1</strong>: Make New Tables to Eliminate Transitive
+                    Dependencies
+                    <ul>
+                      <li>
+                        For every transitive dependency, write its determinant as
+                        PK for new table
+                      </li>
+                      <li>
+                        Determinant: any attribute whose value determines other
+                        values within a row
+                      </li>
+                    </ul>
                   </li>
+
+                  <li>
+                    <strong>Step 2</strong>: Reassign Corresponding Dependent Attributes
+                      <ul>
+                        <li>
+                          Identify attributes dependent on each determinant
+                          identified in Step 1. i.e., identify dependency
+                        </li>
+                        <li>
+                          Name table to reflect its contents and function
+                        </li>
+                      </ul>
+                  </li>
+
                 </ul>
-              </li>
-            </ul>
+              </div>
+            </div>
+
+            <h2>Basic SQL</h2>
+
+            <div class="learn-li small">
+              <div>
+                <h3>SQL</h3>
+                <p>
+                  <strong>SQL</strong> or Structured Query Language is a special-purpose programming language
+                  designed for managing data held in a relational database management
+                  system. It is how we interact with the <strong>physical model</strong>
+                <p>
+              </div>
+            </div>
+
+            <div class="learn-li small">
+              <div>
+                <h3>INSERT</h3>
+                <p>
+                  INSERT INTO table_name (column1,column2,column3,...) <br>
+                  VALUES (value1,value2,value3,...);
+                <p>
+              </div>
+            </div>
+
+            <div class="learn-li small">
+              <div>
+                <h3>DELETE</h3>
+                <p>
+                  DELETE FROM table_name WHERE some_column=some_value;
+                <p>
+              </div>
+            </div>
+
+            <div class="learn-li small">
+              <div>
+                <h3>UPDATE</h3>
+                <p>
+                  UPDATE table_name <br>
+                  SET column1=value1,column2=value2,... <br>
+                  WHERE some_column=some_value;
+                <p>
+              </div>
+            </div>
+
+            <div class="learn-li small">
+              <div>
+                <h3>QUERY</h3>
+                <p>
+                  SELECT column_name,column_name <br>
+                  FROM table_name; <br> <br>
+                  or SELECT * FROM table_name;
+                <p>
+              </div>
+            </div>
+          </div> <!--end learn-content-->
+        </div> <!--end content-->
+
+        <div class="footer">
+          <div class="footer-content">
+            <img src="../images/logo.png">
+            <h3 class="right">Version 1.0</h3>
           </div>
         </div>
 
-        <div class="learn-li">
-          <div>
-            <h3>NF2</h3>
-            <ul>
-              <li>
-                <strong>Step 1</strong>: Make New Tables to Eliminate Partial Dependencies
-                <ul>
-                  <li>
-                    Write each key component on separate line, then write
-                    original (composite) key on last line
-                  </li>
-                  <li>
-                    Each component will become key in new table
-                  </li>
-                </ul>
-              </li>
-              <li>
-              <strong>Step 2</strong>: Reassign Corresponding Dependent Attributes
-                <ul>
-                  <li>
-                    Determine attributes that are dependent on other
-                    attributes
-                  </li>
-                  <li>
-                    At this point, most anomalies have been eliminated
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="learn-li big break">
-          <div>
-            <h3>NF3</h3>
-            <ul>
-              <li>
-                <strong>Step 1</strong>: Make New Tables to Eliminate Transitive
-                Dependencies
-                <ul>
-                  <li>
-                    For every transitive dependency, write its determinant as
-                    PK for new table
-                  </li>
-                  <li>
-                    Determinant: any attribute whose value determines other
-                    values within a row
-                  </li>
-                </ul>
-              </li>
-              <li>
-              <strong>Step 2</strong>: Reassign Corresponding Dependent Attributes
-                <ul>
-                  <li>
-                    Identify attributes dependent on each determinant
-                    identified in Step 1. i.e., identify dependency
-                  </li>
-                  <li>
-                    Name table to reflect its contents and function
-                  </li>
-                </ul>
-              </li>
-            </ul>
-
-          </div>
-        </div>
-
-        <h2>Basic SQL</h2>
-
-        <div class="learn-li small">
-          <div>
-            <h3>SQL</h3>
-            <p>
-              <strong>SQL</strong> or Structured Query Language is a special-purpose programming language
-              designed for managing data held in a relational database management
-              system. It is how we interact with the <strong>physical model</strong>
-            <p>
-          </div>
-        </div>
-
-        <div class="learn-li small">
-          <div>
-            <h3>INSERT</h3>
-            <p>
-              INSERT INTO table_name (column1,column2,column3,...) <br>
-              VALUES (value1,value2,value3,...);
-            <p>
-          </div>
-        </div>
-
-        <div class="learn-li small">
-          <div>
-            <h3>DELETE</h3>
-            <p>
-              DELETE FROM table_name WHERE some_column=some_value;
-            <p>
-          </div>
-        </div>
-
-        <div class="learn-li small">
-          <div>
-            <h3>UPDATE</h3>
-            <p>
-              UPDATE table_name <br>
-              SET column1=value1,column2=value2,... <br>
-              WHERE some_column=some_value;
-            <p>
-          </div>
-        </div>
-
-        <div class="learn-li small">
-          <div>
-            <h3>QUERY</h3>
-            <p>
-              SELECT column_name,column_name <br>
-              FROM table_name; <br> <br>
-
-              or
-
-              SELECT * FROM table_name;
-            <p>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-    <div class="footer">
-      <div class="footer-content">
-        <img src="../images/logo.png">
-        <h3 class="right">Version 1.0</h3>
-      </div>
-    </div>
-
-
-</body>
+    </body>
 </html>

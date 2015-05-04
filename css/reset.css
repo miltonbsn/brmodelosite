@@ -1,3 +1,4 @@
+/*Testing reset to avoid browser differences*/
 h1{
 	margin: 0;
 	padding: 0;

@@ -1,3 +1,7 @@
+/***********************************************************/
+/* HOME PAGE - BASIC elements definitions*/
+/***********************************************************/
+
 h1, h2, h3{
   font-family: 'Oswald', sans-serif;
 }
@@ -33,14 +37,15 @@ strong{
   font-weight: bold;
 }
 
-/***********************************************************/
-/* HOME PAGE */
-/***********************************************************/
-
 body {
     background-color: #f7f7f9;
     margin: 0;
 }
+
+
+/***********************************************************/
+/* HOME PAGE  */
+/***********************************************************/
 
 .content{
   min-height: 450px;
@@ -52,8 +57,6 @@ body {
   min-height: 450px;
   margin: auto;
 }
-
-
 
 .presentation{
     margin-top: 60px;
@@ -79,11 +82,15 @@ body {
    max-width: 500px;
 }
 
-.presentation h1{
-      margin-top: 150px;
+.presentationBlock{
+      margin-top: 125px;
       float: right;
+}
+
+.presentation h2{
       text-align: center;
       color: #6494f9;
+      margin-bottom:20px;
 }
 
 .info-container{
@@ -187,6 +194,20 @@ body {
   margin-top: 25px;
 }
 
+.learn-li.small{
+  display: inline-block;
+  width: 800px;
+  height: 80px;
+  margin-top: 25px;
+}
+
+.learn-li.big{
+  display: inline-block;
+  width: 800px;
+  height: 180px;
+  margin-top: 25px;
+}
+
 .learn-li.break{
   border-bottom: 1px solid #6494f9;
   padding-bottom: 35px;
@@ -226,10 +247,6 @@ body {
 /* ABOUT PAGE */
 /***********************************************************/
 
-.about-content{
-
-}
-
 .about-content img{
   width: 215px;
   height: 215px;
@@ -268,6 +285,11 @@ body {
     width: 100%;
     z-index: 100000;
     height: 2px;
+}
+
+.headerContent {
+    max-width: 1200px;
+    margin: auto;
 }
 
 .header img {
@@ -347,6 +369,11 @@ body {
     border-top: 1px solid #e2e5e5;
 }
 
+.footer-content{
+  max-width: 1200px;
+  margin: auto;
+}
+
 .fixed{
   position:fixed;
   left:0px;
@@ -357,6 +384,7 @@ body {
 .footer h3{
     display: inline-block;
     color: #646565;
+    margin-right: 10px;
 }
 
 .footer .right {

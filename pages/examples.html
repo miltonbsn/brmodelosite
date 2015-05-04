@@ -33,43 +33,103 @@
 
     <div class="content">
 
-        <h1 class="page-title">Bank acount example</h1>
+        <h2 class="page-title">Petshop example</h2>
 
         <div class="example-li">
-          <h2>First step -­ Modeling</h2>
-          <div class="example-img">
-            <img src="../images/exmock.png">
-          </div>
+          <h2>Data problem</h2>
           <div>
-            <p> Is a long established fact that a reader will be distracted by the
-              readable content of a page when looking at its layout. The point of
-              using Lorem Ipsum is that it has a more-or-less normal distribution
-              of letters, as opposed to using 'Content here, content here'.
+            <p>
+              0NF (PETid, PETname, PETtype, PETOwner {VisitDate, PROCId, PROCName})
             </p>
           </div>
         </div>
 
         <div class="example-li">
-          <h2>Step two -­ Optimizing</h2>
+          <h2>Step one -­ Modeling</h2>
           <div class="example-img">
-            <img src="../images/exmock.png">
-          </div>
-          <div>
-            <p> Is a long established fact that a reader will be distracted by the
-              readable content of a page when looking at its layout. The point of
-              using Lorem Ipsum is that it has a more-or-less normal distribution
-              of letters, as opposed to using 'Content here, content here'.
-            </p>
+            <img src="../images/ex_pet.png">
           </div>
         </div>
 
         <div class="example-li">
-          <h2>Step three -­ Building BD</h2>
+          <h2>Step two -­ Normalization</h2>
           <div>
-            <p> Is a long established fact that a reader will be distracted by the
-              readable content of a page when looking at its layout. The point of
-              using Lorem Ipsum is that it has a more-or-less normal distribution
-              of letters, as opposed to using 'Content here, content here'.
+            <h3>NF1</h3>
+            <ul>
+              <li>
+                <strong>PET </strong>(PETid, PETname, PETtype, PETOwner)
+              </li>
+              <li>
+                <strong>PROC </strong>(Procid, VisitDate, PROCId, PROCName)
+              </li>
+            </ul>
+
+            <h3>NF1</h3>
+            <ul>
+              <li>
+                <strong>PET </strong>(PETid, PETname, PETtype, PETOwner)
+              </li>
+              <li>
+                <strong>PROC </strong>(Procid, VisitDate, PROCId, PROCName)
+              </li>
+              <li>
+                <strong>OWNER </strong>(OWNERid, OWNERname, OWNERnumber, OWNERaddress)
+              </li>
+            </ul>
+
+            <h3>NF3</h3>
+            <ul>
+              <li>
+                <strong>PET </strong>(PETid, PETname, PETtype, PETOwner)
+              </li>
+              <li>
+                <strong>PROC </strong>(Procid, VisitDate, PROCId, PROCName)
+              </li>
+              <li>
+                <strong>OWNER </strong>(OWNERid, OWNERname, OWNERnumber, OWNERaddress)
+              </li>
+              <li>
+                <strong>CONSULT </strong>(VISITid, PROCEDUREid, PETid)
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="example-li">
+          <h2>Step three -­ Creating the database</h2>
+          <div>
+            <p> CREATE DATABASE petShop; <br><br>
+
+              CREATE TABLE PET(<br>
+                 PETid datatype,
+                 PETname datatype,
+                 PETowner datatype,
+                 PETtype datatype,
+                 PRIMARY KEY(PETid)<br>
+                );<br><br>
+
+                CREATE TABLE OWNER(<br>
+                   OWNERid datatype,
+                   OWNERname datatype,
+                   OWNERnumber datatype,
+                   OWNERaddress datatype,
+                   PRIMARY KEY(OWNERid)<br>
+                  );<br><br>
+
+                  CREATE TABLE PROC(<br>
+                     PROCId datatype,
+                     PROCName datatype,
+                     PRIMARY KEY(PROCId)<br>
+                    );<br><br>
+
+                    CREATE TABLE CONSULT(<br>
+                    CONSULTid datatype,
+                    CONSULTDate datatype,
+                    PROCId datatype,
+                    PETid datatype,
+                       PRIMARY KEY(VISITid, PROCId, PETid)<br>
+                      );<br><br>
             </p>
           </div>
         </div>
@@ -78,9 +138,10 @@
     </div>
 
     <div class="footer">
-        <h3>Explore</h3>
+      <div class="footer-content">
         <img src="../images/logo.png">
-        <h3 class="right">Contact</h3>
+        <h3 class="right">Version 1.0</h3>
+      </div>
     </div>
 
 

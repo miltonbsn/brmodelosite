@@ -76,73 +76,178 @@
           </div>
         </div>
 
-        <h2>Logic elemets</h2>
+        <h2>Logic elements</h2>
 
-        <div class="process-li">
-          <div class="process-description">
-            <h1>NF1</h1>
-            <p> Is a long established fact that a reader will be distracted by the
-              readable content of a page when looking at its layout. The point of
-              using Lorem Ipsum is that it has a more-or-less normal distribution
-              of letters, as opposed to using 'Content here, content here'.
-            </p>
+
+        <div class="learn-li small">
+          <div>
+            <h3>Database normalization</h3>
+            <p>
+             Databases must be normalized in order to be represented in the logical model.
+             Database normalization is the process of organizing the attributes
+             and tables of a relational database to minimize data redundancy.
+             The databases should reach 3 normal forms; NF1, NF2 3 NF3.
+            <p>
           </div>
         </div>
 
-        <div class="process-li">
-          <div class="process-description">
-            <h1>NF2</h1>
-            <p> Is a long established fact that a reader will be distracted by the
-              readable content of a page when looking at its layout. The point of
-              using Lorem Ipsum is that it has a more-or-less normal distribution
-              of letters, as opposed to using 'Content here, content here'.
-            </p>
+        <div class="learn-li">
+          <div>
+            <h3>NF1</h3>
+            <ul>
+              <li>
+                <strong>Step 1</strong>: Eliminate the Repeating Groups
+                <ul>
+                  <li>
+                    Eliminate nulls: each repeating group attribute contains
+                    an appropriate data value
+                  </li>
+                </ul>
+              </li>
+              <li>
+              <strong>Step 2</strong>: Identify the Primary Key
+                <ul>
+                  <li>
+                    Must uniquely identify attribute value
+                  </li>
+                  <li>
+                    key must be composed
+                  </li>
+                </ul>
+              </li>
+              <li>
+              <strong>Step 3</strong>: Identify All Dependencies
+                <ul>
+                  <li>
+                    Dependencies are depicted with a diagram
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
 
-        <div class="process-li break">
-          <div class="process-description">
-            <h1>NF3</h1>
-            <p> Is a long established fact that a reader will be distracted by the
-              readable content of a page when looking at its layout. The point of
-              using Lorem Ipsum is that it has a more-or-less normal distribution
-              of letters, as opposed to using 'Content here, content here'.
-            </p>
+        <div class="learn-li">
+          <div>
+            <h3>NF2</h3>
+            <ul>
+              <li>
+                <strong>Step 1</strong>: Make New Tables to Eliminate Partial Dependencies
+                <ul>
+                  <li>
+                    Write each key component on separate line, then write
+                    original (composite) key on last line
+                  </li>
+                  <li>
+                    Each component will become key in new table
+                  </li>
+                </ul>
+              </li>
+              <li>
+              <strong>Step 2</strong>: Reassign Corresponding Dependent Attributes
+                <ul>
+                  <li>
+                    Determine attributes that are dependent on other
+                    attributes
+                  </li>
+                  <li>
+                    At this point, most anomalies have been eliminated
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
 
-        <h1>TITLE 3</h1>
+        <div class="learn-li big break">
+          <div>
+            <h3>NF3</h3>
+            <ul>
+              <li>
+                <strong>Step 1</strong>: Make New Tables to Eliminate Transitive
+                Dependencies
+                <ul>
+                  <li>
+                    For every transitive dependency, write its determinant as
+                    PK for new table
+                  </li>
+                  <li>
+                    Determinant: any attribute whose value determines other
+                    values within a row
+                  </li>
+                </ul>
+              </li>
+              <li>
+              <strong>Step 2</strong>: Reassign Corresponding Dependent Attributes
+                <ul>
+                  <li>
+                    Identify attributes dependent on each determinant
+                    identified in Step 1. i.e., identify dependency
+                  </li>
+                  <li>
+                    Name table to reflect its contents and function
+                  </li>
+                </ul>
+              </li>
+            </ul>
 
-        <div class="process-li">
-          <div class="process-description">
-            <h1>NF1</h1>
-            <p> Is a long established fact that a reader will be distracted by the
-              readable content of a page when looking at its layout. The point of
-              using Lorem Ipsum is that it has a more-or-less normal distribution
-              of letters, as opposed to using 'Content here, content here'.
-            </p>
           </div>
         </div>
 
-        <div class="process-li">
-          <div class="process-description">
-            <h1>NF2</h1>
-            <p> Is a long established fact that a reader will be distracted by the
-              readable content of a page when looking at its layout. The point of
-              using Lorem Ipsum is that it has a more-or-less normal distribution
-              of letters, as opposed to using 'Content here, content here'.
-            </p>
+        <h2>Basic SQL</h2>
+
+        <div class="learn-li small">
+          <div>
+            <h3>SQL</h3>
+            <p>
+              <strong>SQL</strong> or Structured Query Language is a special-purpose programming language
+              designed for managing data held in a relational database management
+              system. It is how we interact with the <strong>physical model</strong>
+            <p>
           </div>
         </div>
 
-        <div class="process-li break">
-          <div class="process-description">
-            <h1>NF3</h1>
-            <p> Is a long established fact that a reader will be distracted by the
-              readable content of a page when looking at its layout. The point of
-              using Lorem Ipsum is that it has a more-or-less normal distribution
-              of letters, as opposed to using 'Content here, content here'.
-            </p>
+        <div class="learn-li small">
+          <div>
+            <h3>INSERT</h3>
+            <p>
+              INSERT INTO table_name (column1,column2,column3,...) <br>
+              VALUES (value1,value2,value3,...);
+            <p>
+          </div>
+        </div>
+
+        <div class="learn-li small">
+          <div>
+            <h3>DELETE</h3>
+            <p>
+              DELETE FROM table_name WHERE some_column=some_value;
+            <p>
+          </div>
+        </div>
+
+        <div class="learn-li small">
+          <div>
+            <h3>UPDATE</h3>
+            <p>
+              UPDATE table_name <br>
+              SET column1=value1,column2=value2,... <br>
+              WHERE some_column=some_value;
+            <p>
+          </div>
+        </div>
+
+        <div class="learn-li small">
+          <div>
+            <h3>QUERY</h3>
+            <p>
+              SELECT column_name,column_name <br>
+              FROM table_name; <br> <br>
+
+              or
+
+              SELECT * FROM table_name;
+            <p>
           </div>
         </div>
 
@@ -151,9 +256,10 @@
     </div>
 
     <div class="footer">
-        <h3>Explore</h3>
+      <div class="footer-content">
         <img src="../images/logo.png">
-        <h3 class="right">Contact</h3>
+        <h3 class="right">Version 1.0</h3>
+      </div>
     </div>
 
 

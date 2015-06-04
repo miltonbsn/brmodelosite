@@ -7,34 +7,36 @@
       <link href='http://fonts.googleapis.com/css?family=Oswald:400' rel='stylesheet' type='text/css'>
       <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
       <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>
-      <link rel="stylesheet" type="text/css" href="css/reset.css">
-      <link rel="stylesheet" type="text/css" href="css/main.css">
+      <link rel="stylesheet" href="css/main.css">
   </head>
 
   <body>
       <!--header-->
-      <div class="header">
-          <img src="images/logo.png" alt="logo">
-          <h1><a>brModelo</a></h1>
+      <header class="mainPage">
+          <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+          <h1><a href="index.html">brModelo</a></h1>
           <nav>
               <a href="index.html" class="navigation">HOME</a>
               <a href="pages/process.html">PROCESS</a>
               <a href="pages/learn.html">LEARN</a>
               <a href="pages/examples.html">EXAMPLES</a>
               <a href="pages/news.html">NEWS</a>
-              <a href="pages/about.html" class="last">ABOUT</a>
+              <a href="pages/about.html">ABOUT</a>
               <a class="button">TRY NOW</a>
           </nav>
-      </div>
+      </header>
 
       <!--For this page I had to create an alternative due the blue background -->
-      <div class="content-alternative">
+      <main class="content-alternative">
 
          <div class="presentation">
             <div class="presentation-container">
-              <span class="helper"></span>
-              <img src="images/coverpage600.png" alt="Cover page">
-              <div class=presentationBlock>
+              <div class="coverimg">
+                <!--using to vertical alignment -->
+                <span class="helper"></span>
+                <img src="images/coverpage600.png" alt="Cover page">
+              </div>
+              <div class="presentationBlock">
                 <h2>Design your database <br/> online</h2>
                 <a class="button">create a free account</a>
               </div>
@@ -68,14 +70,14 @@
                 and <strong>FREE</strong>.</p>
           </div>
 
-      </div>
+      </main>
 
-      <div class="footer">
+      <footer>
         <div class="footer-content">
-          <img src="images/logo.png" alt="logo" >
+          <a href="index.html"><img src="images/logo.png" alt="logo"></a>
           <h3 class="right">Version 1.0</h3>
         </div>
-      </div>
+      </footer>
 
   </body>
 </html>

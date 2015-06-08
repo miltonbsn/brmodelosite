@@ -60,10 +60,11 @@ body {
 /* HOME PAGE  */
 /***********************************************************/
 
-.content{
+.content {
   min-height: 450px;
   width: 800px;
   margin: auto;
+	margin-top: 40px;
 }
 
 .content-alternative{
@@ -262,6 +263,11 @@ body {
   margin-bottom: 15px;
 }
 
+.example-li.break{
+  border-bottom: 1px solid #6494f9;
+  padding-bottom: 35px;
+}
+
 /***********************************************************/
 /* ABOUT PAGE */
 /***********************************************************/
@@ -375,19 +381,22 @@ header > nav a:nth-child(6) {
 }
 
 .button:hover {
-    opacity: 0.7;
+		background: #6494f9;
+		color: #254ac4!important;
 }
 
 .button:active {
-    opacity: 0.3;
+		background: #6494f9;
+		color: #254ac4!important;
+    opacity: 0.5;
 }
 
 /***********************************************************/
 /* footer */
 /***********************************************************/
 footer {
-    margin-top: 25px;
-    height: 60px;
+    margin-top: 40px;
+    height: 40px;
     border-top: 1px solid #e2e5e5;
 }
 
@@ -403,19 +412,12 @@ footer {
   width:100%;
 }
 
-footer h3{
-    display: inline-block;
-    color: #646565;
-    margin-right: 10px;
-}
-
-footer .right {
-    float: right;
-}
-
-footer img {
+footer p {
    margin-top: 10px;
-   position:absolute;
-   left:50%;
-   margin-left:-25px;
+	 color: #646565;
+	 font-size:12px;
+	 display: block;
+   margin-left: auto;
+   margin-right: auto;
+	 text-align: center;
 }
